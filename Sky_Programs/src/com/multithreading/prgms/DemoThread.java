@@ -9,7 +9,7 @@ public class DemoThread extends Thread {
 		DemoThread dt=new DemoThread();
 		Thread t=new Thread(dt);
 		t.start();
-
+                System.out.println("asdfghjkl");
 	}
 
 }
