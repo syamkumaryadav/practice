@@ -20,6 +20,7 @@ public class Palindrome {
 			System.out.println("given string is palindrome");
 		else
 			System.out.println("not palindrome");
+		s.close();
 	}
 
 }

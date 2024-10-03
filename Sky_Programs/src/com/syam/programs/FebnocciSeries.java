@@ -17,7 +17,7 @@ public class FebnocciSeries {
 			next=last;
 			
 		}
-
+		s.close();
 	}
 
 }
