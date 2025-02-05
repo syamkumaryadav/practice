@@ -6,13 +6,27 @@ public class MultiThread implements Runnable {
 	{
 		name=name1;
 	}
-	public void run()
+
+	public void run() 	// Override the run() method
 	{
 		for(int a=1;a<=10;a++)
 		{
 			System.out.println(name +" : " +a);
 		}
 	}
+
+																								/*public void run() {
+																								       for (int i = 1; i <= 5; i++) {
+																								           System.out.println(name + " - Count: " + i);
+																								           try {
+																								               // Make the thread sleep for 500 milliseconds
+																								               Thread.sleep(5000);
+																								           } catch (InterruptedException e) {
+																								               System.out.println(name + " interrupted.");
+																								           }
+																								       }
+																								       System.out.println(name + " finished.");
+																								   }*/
 	public static void main(String[] args) {
 		MultiThread mt1=new MultiThread("Thread.......... 1");
 		MultiThread mt2=new MultiThread("Thread 2");
@@ -21,7 +35,7 @@ public class MultiThread implements Runnable {
 		t1.start();
 		t2.start();
 		//Thread t= Thread.currentThread();
-		System.out.println(t1);
+		System.out.println(t1+"dfghjkkkjhgfdfghjkjhgfdsfghjk");
 	}
 
 }

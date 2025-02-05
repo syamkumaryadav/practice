@@ -5,25 +5,22 @@ import java.util.Scanner;
 public class Palindrome {
 
 	public static void main(String[] args) {
-		Scanner s=new Scanner(System.in);
-		System.out.print("Enter ur string : ");//371
-		String str=s.nextLine();
-		String reverse="";
-		char c;
-		for(int a=0;a<str.length();a++)
-		{
-			c=str.charAt(a);
-			reverse=c+reverse;
-		}
-		System.out.println(reverse);
-		if(str.equals(reverse))
-			System.out.println("given string is palindrome");
-		else
-			System.out.println("not palindrome");
-		s.close();
+		Scanner s = new Scanner(System.in);
+		System.out.print("enter ur string : ");
+		String str = s.nextLine();
+		verifyPal(str);
 	}
 
+	private static void verifyPal(String str) {
+		String ss = "";
+		for (int a = 0; a <= str.length() - 1; a++) {
+			ss = str.charAt(a) + ss;
+		}
+
+		if (str.equals(ss)) {
+			System.out.println(str + " given string is palindrome");
+		} else {
+			System.out.println(str + " given string is not palindrome");
+		}
+	}
 }
-
-
-

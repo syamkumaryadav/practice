@@ -15,7 +15,7 @@ public class ThrowNewCustomException {
 		// TODO Auto-generated method stub
 		ThrowNewCustomException t = new ThrowNewCustomException();
 		
-		t.checkAge(25); // for this throws custom Exception
+		t.checkAge(5); // for this throws custom Exception
 		
 		/*try {
 			t.checkAge(5);

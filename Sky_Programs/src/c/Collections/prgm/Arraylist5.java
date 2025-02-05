@@ -27,14 +27,16 @@ class Arraylist5 {
 		al.add(s2);
 		al.add(s3);
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Entered the pin no of the student to search:");
+		System.out.print("Entered the pin no of the student to search:");
 		int pin = sc.nextInt();
-		Iterator itr = al.iterator();
-		while (itr.hasNext()) {
-			student st = (student) itr.next();
+		Iterator<student> iterator = al.iterator();
+		while (iterator.hasNext()) {
+			student st = (student) iterator.next();
 			if (pin == st.pinno) {
 				System.out.println("yours entered pin number got percentage:" + st.marks_percentage);
 				flag = 1;
+			}else {
+				// here if we use else block (no on record r there) all times printed 
 			}
 		}
 		if (flag == 0)
