@@ -8,8 +8,8 @@ public class BubbelSort {
 
 		int arr[] = { 14, 33, 27, 35, 10, 3 };
 
-		for (int a = 0; a < 5; a++) {
-			for (int b = 0; b < 5; b++) {
+		for (int a = 0; a < arr.length-1; a++) {
+			for (int b = 0; b < arr.length-1; b++) {
 				int temp;
 				if (arr[b] > arr[b + 1]) {
 					temp=arr[b];
